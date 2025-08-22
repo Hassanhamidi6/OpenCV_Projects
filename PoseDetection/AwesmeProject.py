@@ -18,8 +18,9 @@ while True:
 
     img= detector.findPose(img)
     lmlist= detector.findposition(img, draw=False)
-    print(lmlist[14])
-    cv2.circle(img, (lmlist[14][1], lmlist[14][2]), 3, (0,255,0), cv2.FILLED)
+    if len(lmlist) != 0:
+        print(lmlist[14])
+        cv2.circle(img, (lmlist[14][1], lmlist[14][2]), 5, (0,255,0), cv2.FILLED)
 
     cTime= time.time()     # Current time 
     fps= 1 / (cTime - pTime)

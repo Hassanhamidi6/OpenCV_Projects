@@ -15,7 +15,6 @@ while True:
     success, img = cap.read()
     if not success:
         break
-
     img = cv2.resize(img, (800, 600))    # Resize the vedio resolution according to my screen
 
     imgRGB= cv2.cvtColor(img, cv2.COLOR_BGR2RGB)   # here we change the color to RGB
