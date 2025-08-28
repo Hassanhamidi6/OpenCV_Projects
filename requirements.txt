@@ -1,4 +1,4 @@
 opencv-python 
 mediapipe
 numpy
-# pycaw # this library is  use for the volume control
+pycaw # this library is  use for the volume control
