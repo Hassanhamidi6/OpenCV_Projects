@@ -55,6 +55,7 @@ class FaceDetector():
         # Bottom Right x1,y
         cv2.line(img, (x1,y1), (x1-l, y1), (255, 0, 255), t)
         cv2.line(img, (x1,y1), (x1, y1-l), (255, 0, 255), t)
+        
         return img
 
 
